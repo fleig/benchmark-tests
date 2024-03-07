@@ -1,0 +1,918 @@
+/home/luke/.sdkman/candidates/java/17.0.10-tem/bin/java -javaagent:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/lib/idea_rt.jar=34427:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/bin -Dfile.encoding=UTF-8 -classpath /home/luke/projects/tutorials/teste2/target/classes:/home/luke/.m2/repository/org/openjdk/jmh/jmh-core/1.37/jmh-core-1.37.jar:/home/luke/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/home/luke/.m2/repository/org/apache/commons/commons-math3/3.6.1/commons-math3-3.6.1.jar:/home/luke/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.37/jmh-generator-annprocess-1.37.jar org.example.FinalParamBenchmark
+# JMH version: 1.37
+# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7
+# VM invoker: /home/luke/.sdkman/candidates/java/17.0.10-tem/bin/java
+# VM options: -javaagent:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/lib/idea_rt.jar=34427:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.FinalParamBenchmark.concatFinalParamAndLocalVariableStrings
+
+# Run progress: 0.00% complete, ETA 02:05:00
+# Fork: 1 of 10
+# Warmup Iteration   1: 12.371 ns/op
+# Warmup Iteration   2: 12.201 ns/op
+# Warmup Iteration   3: 10.939 ns/op
+# Warmup Iteration   4: 10.873 ns/op
+# Warmup Iteration   5: 10.884 ns/op
+Iteration   1: 10.918 ns/op
+Iteration   2: 10.886 ns/op
+Iteration   3: 10.908 ns/op
+Iteration   4: 12.058 ns/op
+Iteration   5: 10.848 ns/op
+Iteration   6: 10.857 ns/op
+Iteration   7: 10.879 ns/op
+Iteration   8: 10.867 ns/op
+Iteration   9: 10.870 ns/op
+Iteration  10: 10.855 ns/op
+Iteration  11: 10.872 ns/op
+Iteration  12: 11.250 ns/op
+Iteration  13: 11.255 ns/op
+Iteration  14: 12.080 ns/op
+Iteration  15: 14.672 ns/op
+Iteration  16: 11.266 ns/op
+Iteration  17: 11.118 ns/op
+Iteration  18: 10.878 ns/op
+Iteration  19: 11.280 ns/op
+Iteration  20: 10.851 ns/op
+
+# Run progress: 3.33% complete, ETA 02:01:12
+# Fork: 2 of 10
+# Warmup Iteration   1: 12.623 ns/op
+# Warmup Iteration   2: 12.635 ns/op
+# Warmup Iteration   3: 11.610 ns/op
+# Warmup Iteration   4: 11.690 ns/op
+# Warmup Iteration   5: 12.666 ns/op
+Iteration   1: 11.027 ns/op
+Iteration   2: 12.424 ns/op
+Iteration   3: 12.615 ns/op
+Iteration   4: 11.947 ns/op
+Iteration   5: 11.820 ns/op
+Iteration   6: 11.233 ns/op
+Iteration   7: 12.757 ns/op
+Iteration   8: 16.319 ns/op
+Iteration   9: 13.955 ns/op
+Iteration  10: 17.510 ns/op
+Iteration  11: 18.302 ns/op
+Iteration  12: 17.169 ns/op
+Iteration  13: 13.029 ns/op
+Iteration  14: 12.167 ns/op
+Iteration  15: 12.552 ns/op
+Iteration  16: 12.505 ns/op
+Iteration  17: 12.087 ns/op
+Iteration  18: 11.085 ns/op
+Iteration  19: 12.840 ns/op
+Iteration  20: 11.552 ns/op
+
+# Run progress: 6.67% complete, ETA 01:57:00
+# Fork: 3 of 10
+# Warmup Iteration   1: 12.583 ns/op
+# Warmup Iteration   2: 13.842 ns/op
+# Warmup Iteration   3: 10.953 ns/op
+# Warmup Iteration   4: 10.929 ns/op
+# Warmup Iteration   5: 11.805 ns/op
+Iteration   1: 11.475 ns/op
+Iteration   2: 10.940 ns/op
+Iteration   3: 10.933 ns/op
+Iteration   4: 10.976 ns/op
+Iteration   5: 10.953 ns/op
+Iteration   6: 10.921 ns/op
+Iteration   7: 10.918 ns/op
+Iteration   8: 10.923 ns/op
+Iteration   9: 10.927 ns/op
+Iteration  10: 10.931 ns/op
+Iteration  11: 10.931 ns/op
+Iteration  12: 10.920 ns/op
+Iteration  13: 10.895 ns/op
+Iteration  14: 10.902 ns/op
+Iteration  15: 10.923 ns/op
+Iteration  16: 10.885 ns/op
+Iteration  17: 10.897 ns/op
+Iteration  18: 10.893 ns/op
+Iteration  19: 10.903 ns/op
+Iteration  20: 10.886 ns/op
+
+# Run progress: 10.00% complete, ETA 01:52:49
+# Fork: 4 of 10
+# Warmup Iteration   1: 12.273 ns/op
+# Warmup Iteration   2: 12.114 ns/op
+# Warmup Iteration   3: 11.504 ns/op
+# Warmup Iteration   4: 10.917 ns/op
+# Warmup Iteration   5: 10.961 ns/op
+Iteration   1: 10.912 ns/op
+Iteration   2: 10.907 ns/op
+Iteration   3: 10.949 ns/op
+Iteration   4: 10.933 ns/op
+Iteration   5: 10.910 ns/op
+Iteration   6: 11.271 ns/op
+Iteration   7: 10.889 ns/op
+Iteration   8: 10.844 ns/op
+Iteration   9: 10.871 ns/op
+Iteration  10: 10.860 ns/op
+Iteration  11: 10.803 ns/op
+Iteration  12: 10.870 ns/op
+Iteration  13: 10.811 ns/op
+Iteration  14: 10.837 ns/op
+Iteration  15: 10.829 ns/op
+Iteration  16: 10.810 ns/op
+Iteration  17: 10.809 ns/op
+Iteration  18: 10.827 ns/op
+Iteration  19: 10.858 ns/op
+Iteration  20: 10.812 ns/op
+
+# Run progress: 13.33% complete, ETA 01:48:37
+# Fork: 5 of 10
+# Warmup Iteration   1: 12.288 ns/op
+# Warmup Iteration   2: 12.135 ns/op
+# Warmup Iteration   3: 10.773 ns/op
+# Warmup Iteration   4: 10.788 ns/op
+# Warmup Iteration   5: 10.814 ns/op
+Iteration   1: 10.817 ns/op
+Iteration   2: 10.866 ns/op
+Iteration   3: 10.853 ns/op
+Iteration   4: 10.818 ns/op
+Iteration   5: 10.857 ns/op
+Iteration   6: 10.820 ns/op
+Iteration   7: 10.869 ns/op
+Iteration   8: 10.834 ns/op
+Iteration   9: 10.844 ns/op
+Iteration  10: 10.826 ns/op
+Iteration  11: 10.839 ns/op
+Iteration  12: 10.788 ns/op
+Iteration  13: 10.844 ns/op
+Iteration  14: 10.864 ns/op
+Iteration  15: 10.824 ns/op
+Iteration  16: 10.868 ns/op
+Iteration  17: 10.811 ns/op
+Iteration  18: 10.836 ns/op
+Iteration  19: 10.845 ns/op
+Iteration  20: 10.802 ns/op
+
+# Run progress: 16.67% complete, ETA 01:44:26
+# Fork: 6 of 10
+# Warmup Iteration   1: 12.523 ns/op
+# Warmup Iteration   2: 12.097 ns/op
+# Warmup Iteration   3: 10.818 ns/op
+# Warmup Iteration   4: 10.823 ns/op
+# Warmup Iteration   5: 10.868 ns/op
+Iteration   1: 10.822 ns/op
+Iteration   2: 10.848 ns/op
+Iteration   3: 10.862 ns/op
+Iteration   4: 10.833 ns/op
+Iteration   5: 10.818 ns/op
+Iteration   6: 10.849 ns/op
+Iteration   7: 10.848 ns/op
+Iteration   8: 10.812 ns/op
+Iteration   9: 10.832 ns/op
+Iteration  10: 10.848 ns/op
+Iteration  11: 10.840 ns/op
+Iteration  12: 10.829 ns/op
+Iteration  13: 10.841 ns/op
+Iteration  14: 10.823 ns/op
+Iteration  15: 10.820 ns/op
+Iteration  16: 10.810 ns/op
+Iteration  17: 10.818 ns/op
+Iteration  18: 10.880 ns/op
+Iteration  19: 10.833 ns/op
+Iteration  20: 10.809 ns/op
+
+# Run progress: 20.00% complete, ETA 01:40:15
+# Fork: 7 of 10
+# Warmup Iteration   1: 12.270 ns/op
+# Warmup Iteration   2: 12.151 ns/op
+# Warmup Iteration   3: 10.849 ns/op
+# Warmup Iteration   4: 10.803 ns/op
+# Warmup Iteration   5: 10.854 ns/op
+Iteration   1: 10.840 ns/op
+Iteration   2: 10.844 ns/op
+Iteration   3: 10.883 ns/op
+Iteration   4: 10.848 ns/op
+Iteration   5: 10.830 ns/op
+Iteration   6: 10.792 ns/op
+Iteration   7: 10.809 ns/op
+Iteration   8: 10.835 ns/op
+Iteration   9: 10.835 ns/op
+Iteration  10: 10.892 ns/op
+Iteration  11: 10.837 ns/op
+Iteration  12: 10.822 ns/op
+Iteration  13: 10.819 ns/op
+Iteration  14: 10.808 ns/op
+Iteration  15: 10.840 ns/op
+Iteration  16: 10.844 ns/op
+Iteration  17: 10.806 ns/op
+Iteration  18: 10.854 ns/op
+Iteration  19: 10.823 ns/op
+Iteration  20: 10.806 ns/op
+
+# Run progress: 23.33% complete, ETA 01:36:04
+# Fork: 8 of 10
+# Warmup Iteration   1: 12.485 ns/op
+# Warmup Iteration   2: 12.168 ns/op
+# Warmup Iteration   3: 10.870 ns/op
+# Warmup Iteration   4: 10.902 ns/op
+# Warmup Iteration   5: 10.845 ns/op
+Iteration   1: 10.865 ns/op
+Iteration   2: 10.821 ns/op
+Iteration   3: 10.822 ns/op
+Iteration   4: 10.837 ns/op
+Iteration   5: 10.950 ns/op
+Iteration   6: 10.821 ns/op
+Iteration   7: 10.792 ns/op
+Iteration   8: 10.847 ns/op
+Iteration   9: 10.838 ns/op
+Iteration  10: 10.848 ns/op
+Iteration  11: 10.867 ns/op
+Iteration  12: 10.859 ns/op
+Iteration  13: 10.841 ns/op
+Iteration  14: 10.836 ns/op
+Iteration  15: 10.808 ns/op
+Iteration  16: 10.817 ns/op
+Iteration  17: 10.851 ns/op
+Iteration  18: 10.874 ns/op
+Iteration  19: 10.804 ns/op
+Iteration  20: 10.807 ns/op
+
+# Run progress: 26.67% complete, ETA 01:31:54
+# Fork: 9 of 10
+# Warmup Iteration   1: 12.272 ns/op
+# Warmup Iteration   2: 12.144 ns/op
+# Warmup Iteration   3: 10.883 ns/op
+# Warmup Iteration   4: 10.851 ns/op
+# Warmup Iteration   5: 10.867 ns/op
+Iteration   1: 10.812 ns/op
+Iteration   2: 10.830 ns/op
+Iteration   3: 10.856 ns/op
+Iteration   4: 10.824 ns/op
+Iteration   5: 10.855 ns/op
+Iteration   6: 10.853 ns/op
+Iteration   7: 10.817 ns/op
+Iteration   8: 10.865 ns/op
+Iteration   9: 10.835 ns/op
+Iteration  10: 10.840 ns/op
+Iteration  11: 10.846 ns/op
+Iteration  12: 10.842 ns/op
+Iteration  13: 10.841 ns/op
+Iteration  14: 10.822 ns/op
+Iteration  15: 10.836 ns/op
+Iteration  16: 10.854 ns/op
+Iteration  17: 10.798 ns/op
+Iteration  18: 10.846 ns/op
+Iteration  19: 10.911 ns/op
+Iteration  20: 10.923 ns/op
+
+# Run progress: 30.00% complete, ETA 01:27:43
+# Fork: 10 of 10
+# Warmup Iteration   1: 12.481 ns/op
+# Warmup Iteration   2: 12.103 ns/op
+# Warmup Iteration   3: 10.807 ns/op
+# Warmup Iteration   4: 10.843 ns/op
+# Warmup Iteration   5: 10.803 ns/op
+Iteration   1: 10.834 ns/op
+Iteration   2: 10.795 ns/op
+Iteration   3: 10.793 ns/op
+Iteration   4: 10.800 ns/op
+Iteration   5: 10.789 ns/op
+Iteration   6: 10.792 ns/op
+Iteration   7: 10.810 ns/op
+Iteration   8: 10.866 ns/op
+Iteration   9: 10.797 ns/op
+Iteration  10: 10.799 ns/op
+Iteration  11: 10.880 ns/op
+Iteration  12: 10.887 ns/op
+Iteration  13: 10.885 ns/op
+Iteration  14: 10.828 ns/op
+Iteration  15: 10.835 ns/op
+Iteration  16: 10.871 ns/op
+Iteration  17: 10.845 ns/op
+Iteration  18: 10.849 ns/op
+Iteration  19: 10.823 ns/op
+Iteration  20: 10.815 ns/op
+
+
+Result "org.example.FinalParamBenchmark.concatFinalParamAndLocalVariableStrings":
+  11.136 ±(99.9%) 0.244 ns/op [Average]
+  (min, avg, max) = (10.788, 11.136, 18.302), stdev = 1.032
+  CI (99.9%): [10.893, 11.380] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7
+# VM invoker: /home/luke/.sdkman/candidates/java/17.0.10-tem/bin/java
+# VM options: -javaagent:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/lib/idea_rt.jar=34427:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.FinalParamBenchmark.concatFinalParamStrings
+
+# Run progress: 33.33% complete, ETA 01:23:32
+# Fork: 1 of 10
+# Warmup Iteration   1: 13.552 ns/op
+# Warmup Iteration   2: 12.118 ns/op
+# Warmup Iteration   3: 12.331 ns/op
+# Warmup Iteration   4: 12.359 ns/op
+# Warmup Iteration   5: 12.299 ns/op
+Iteration   1: 12.320 ns/op
+Iteration   2: 12.302 ns/op
+Iteration   3: 12.280 ns/op
+Iteration   4: 12.365 ns/op
+Iteration   5: 12.327 ns/op
+Iteration   6: 12.333 ns/op
+Iteration   7: 12.365 ns/op
+Iteration   8: 12.299 ns/op
+Iteration   9: 12.298 ns/op
+Iteration  10: 12.330 ns/op
+Iteration  11: 12.283 ns/op
+Iteration  12: 10.816 ns/op
+Iteration  13: 10.894 ns/op
+Iteration  14: 10.832 ns/op
+Iteration  15: 10.869 ns/op
+Iteration  16: 10.869 ns/op
+Iteration  17: 10.852 ns/op
+Iteration  18: 10.812 ns/op
+Iteration  19: 10.798 ns/op
+Iteration  20: 10.818 ns/op
+
+# Run progress: 36.67% complete, ETA 01:19:22
+# Fork: 2 of 10
+# Warmup Iteration   1: 12.487 ns/op
+# Warmup Iteration   2: 12.148 ns/op
+# Warmup Iteration   3: 10.808 ns/op
+# Warmup Iteration   4: 10.806 ns/op
+# Warmup Iteration   5: 10.799 ns/op
+Iteration   1: 10.792 ns/op
+Iteration   2: 10.816 ns/op
+Iteration   3: 10.799 ns/op
+Iteration   4: 10.829 ns/op
+Iteration   5: 10.806 ns/op
+Iteration   6: 10.786 ns/op
+Iteration   7: 10.840 ns/op
+Iteration   8: 10.869 ns/op
+Iteration   9: 10.867 ns/op
+Iteration  10: 10.859 ns/op
+Iteration  11: 10.811 ns/op
+Iteration  12: 11.032 ns/op
+Iteration  13: 10.885 ns/op
+Iteration  14: 10.868 ns/op
+Iteration  15: 10.831 ns/op
+Iteration  16: 10.817 ns/op
+Iteration  17: 10.811 ns/op
+Iteration  18: 10.986 ns/op
+Iteration  19: 10.851 ns/op
+Iteration  20: 10.821 ns/op
+
+# Run progress: 40.00% complete, ETA 01:15:11
+# Fork: 3 of 10
+# Warmup Iteration   1: 12.268 ns/op
+# Warmup Iteration   2: 12.113 ns/op
+# Warmup Iteration   3: 10.821 ns/op
+# Warmup Iteration   4: 10.821 ns/op
+# Warmup Iteration   5: 10.830 ns/op
+Iteration   1: 10.828 ns/op
+Iteration   2: 10.821 ns/op
+Iteration   3: 10.871 ns/op
+Iteration   4: 10.860 ns/op
+Iteration   5: 10.874 ns/op
+Iteration   6: 10.869 ns/op
+Iteration   7: 10.885 ns/op
+Iteration   8: 10.892 ns/op
+Iteration   9: 10.882 ns/op
+Iteration  10: 10.850 ns/op
+Iteration  11: 10.850 ns/op
+Iteration  12: 10.848 ns/op
+Iteration  13: 10.860 ns/op
+Iteration  14: 10.892 ns/op
+Iteration  15: 10.852 ns/op
+Iteration  16: 10.870 ns/op
+Iteration  17: 10.846 ns/op
+Iteration  18: 10.820 ns/op
+Iteration  19: 10.821 ns/op
+Iteration  20: 10.840 ns/op
+
+# Run progress: 43.33% complete, ETA 01:11:00
+# Fork: 4 of 10
+# Warmup Iteration   1: 12.287 ns/op
+# Warmup Iteration   2: 12.089 ns/op
+# Warmup Iteration   3: 10.906 ns/op
+# Warmup Iteration   4: 10.888 ns/op
+# Warmup Iteration   5: 10.844 ns/op
+Iteration   1: 10.886 ns/op
+Iteration   2: 10.876 ns/op
+Iteration   3: 10.850 ns/op
+Iteration   4: 10.850 ns/op
+Iteration   5: 10.877 ns/op
+Iteration   6: 10.871 ns/op
+Iteration   7: 10.876 ns/op
+Iteration   8: 10.870 ns/op
+Iteration   9: 10.874 ns/op
+Iteration  10: 10.895 ns/op
+Iteration  11: 10.865 ns/op
+Iteration  12: 10.871 ns/op
+Iteration  13: 10.813 ns/op
+Iteration  14: 10.880 ns/op
+Iteration  15: 10.864 ns/op
+Iteration  16: 10.854 ns/op
+Iteration  17: 10.864 ns/op
+Iteration  18: 10.894 ns/op
+Iteration  19: 10.898 ns/op
+Iteration  20: 10.843 ns/op
+
+# Run progress: 46.67% complete, ETA 01:06:50
+# Fork: 5 of 10
+# Warmup Iteration   1: 12.339 ns/op
+# Warmup Iteration   2: 12.136 ns/op
+# Warmup Iteration   3: 10.845 ns/op
+# Warmup Iteration   4: 10.885 ns/op
+# Warmup Iteration   5: 10.886 ns/op
+Iteration   1: 10.841 ns/op
+Iteration   2: 10.802 ns/op
+Iteration   3: 11.127 ns/op
+Iteration   4: 10.901 ns/op
+Iteration   5: 10.864 ns/op
+Iteration   6: 10.923 ns/op
+Iteration   7: 10.844 ns/op
+Iteration   8: 10.851 ns/op
+Iteration   9: 10.881 ns/op
+Iteration  10: 10.887 ns/op
+Iteration  11: 10.829 ns/op
+Iteration  12: 10.827 ns/op
+Iteration  13: 10.850 ns/op
+Iteration  14: 10.859 ns/op
+Iteration  15: 10.825 ns/op
+Iteration  16: 10.832 ns/op
+Iteration  17: 10.807 ns/op
+Iteration  18: 10.834 ns/op
+Iteration  19: 10.852 ns/op
+Iteration  20: 10.838 ns/op
+
+# Run progress: 50.00% complete, ETA 01:02:39
+# Fork: 6 of 10
+# Warmup Iteration   1: 12.414 ns/op
+# Warmup Iteration   2: 12.180 ns/op
+# Warmup Iteration   3: 10.817 ns/op
+# Warmup Iteration   4: 10.802 ns/op
+# Warmup Iteration   5: 10.822 ns/op
+Iteration   1: 10.820 ns/op
+Iteration   2: 10.868 ns/op
+Iteration   3: 10.859 ns/op
+Iteration   4: 10.798 ns/op
+Iteration   5: 10.834 ns/op
+Iteration   6: 10.852 ns/op
+Iteration   7: 10.835 ns/op
+Iteration   8: 10.982 ns/op
+Iteration   9: 10.953 ns/op
+Iteration  10: 10.846 ns/op
+Iteration  11: 10.865 ns/op
+Iteration  12: 10.827 ns/op
+Iteration  13: 10.856 ns/op
+Iteration  14: 10.826 ns/op
+Iteration  15: 10.841 ns/op
+Iteration  16: 10.816 ns/op
+Iteration  17: 10.818 ns/op
+Iteration  18: 10.845 ns/op
+Iteration  19: 10.813 ns/op
+Iteration  20: 10.813 ns/op
+
+# Run progress: 53.33% complete, ETA 00:58:28
+# Fork: 7 of 10
+# Warmup Iteration   1: 12.319 ns/op
+# Warmup Iteration   2: 12.120 ns/op
+# Warmup Iteration   3: 11.356 ns/op
+# Warmup Iteration   4: 10.850 ns/op
+# Warmup Iteration   5: 10.852 ns/op
+Iteration   1: 10.877 ns/op
+Iteration   2: 10.864 ns/op
+Iteration   3: 10.815 ns/op
+Iteration   4: 10.822 ns/op
+Iteration   5: 10.817 ns/op
+Iteration   6: 10.861 ns/op
+Iteration   7: 10.910 ns/op
+Iteration   8: 10.843 ns/op
+Iteration   9: 10.848 ns/op
+Iteration  10: 10.931 ns/op
+Iteration  11: 10.898 ns/op
+Iteration  12: 10.862 ns/op
+Iteration  13: 10.871 ns/op
+Iteration  14: 10.826 ns/op
+Iteration  15: 10.865 ns/op
+Iteration  16: 10.822 ns/op
+Iteration  17: 10.818 ns/op
+Iteration  18: 10.828 ns/op
+Iteration  19: 10.814 ns/op
+Iteration  20: 10.841 ns/op
+
+# Run progress: 56.67% complete, ETA 00:54:18
+# Fork: 8 of 10
+# Warmup Iteration   1: 12.320 ns/op
+# Warmup Iteration   2: 12.145 ns/op
+# Warmup Iteration   3: 10.833 ns/op
+# Warmup Iteration   4: 10.782 ns/op
+# Warmup Iteration   5: 10.828 ns/op
+Iteration   1: 10.800 ns/op
+Iteration   2: 10.824 ns/op
+Iteration   3: 10.822 ns/op
+Iteration   4: 10.830 ns/op
+Iteration   5: 10.861 ns/op
+Iteration   6: 10.816 ns/op
+Iteration   7: 10.796 ns/op
+Iteration   8: 10.840 ns/op
+Iteration   9: 10.899 ns/op
+Iteration  10: 10.840 ns/op
+Iteration  11: 10.782 ns/op
+Iteration  12: 10.815 ns/op
+Iteration  13: 10.828 ns/op
+Iteration  14: 10.880 ns/op
+Iteration  15: 10.798 ns/op
+Iteration  16: 10.810 ns/op
+Iteration  17: 10.851 ns/op
+Iteration  18: 10.893 ns/op
+Iteration  19: 10.861 ns/op
+Iteration  20: 10.802 ns/op
+
+# Run progress: 60.00% complete, ETA 00:50:07
+# Fork: 9 of 10
+# Warmup Iteration   1: 12.267 ns/op
+# Warmup Iteration   2: 12.155 ns/op
+# Warmup Iteration   3: 10.814 ns/op
+# Warmup Iteration   4: 10.842 ns/op
+# Warmup Iteration   5: 10.838 ns/op
+Iteration   1: 10.827 ns/op
+Iteration   2: 10.870 ns/op
+Iteration   3: 10.859 ns/op
+Iteration   4: 10.860 ns/op
+Iteration   5: 10.867 ns/op
+Iteration   6: 10.889 ns/op
+Iteration   7: 10.856 ns/op
+Iteration   8: 10.847 ns/op
+Iteration   9: 10.856 ns/op
+Iteration  10: 10.852 ns/op
+Iteration  11: 10.847 ns/op
+Iteration  12: 10.797 ns/op
+Iteration  13: 10.814 ns/op
+Iteration  14: 10.813 ns/op
+Iteration  15: 10.799 ns/op
+Iteration  16: 10.809 ns/op
+Iteration  17: 10.850 ns/op
+Iteration  18: 10.852 ns/op
+Iteration  19: 10.854 ns/op
+Iteration  20: 10.851 ns/op
+
+# Run progress: 63.33% complete, ETA 00:45:56
+# Fork: 10 of 10
+# Warmup Iteration   1: 12.228 ns/op
+# Warmup Iteration   2: 12.195 ns/op
+# Warmup Iteration   3: 11.312 ns/op
+# Warmup Iteration   4: 10.887 ns/op
+# Warmup Iteration   5: 10.929 ns/op
+Iteration   1: 10.869 ns/op
+Iteration   2: 10.855 ns/op
+Iteration   3: 10.886 ns/op
+Iteration   4: 10.853 ns/op
+Iteration   5: 10.850 ns/op
+Iteration   6: 10.804 ns/op
+Iteration   7: 10.873 ns/op
+Iteration   8: 10.865 ns/op
+Iteration   9: 10.842 ns/op
+Iteration  10: 10.857 ns/op
+Iteration  11: 10.868 ns/op
+Iteration  12: 10.839 ns/op
+Iteration  13: 10.871 ns/op
+Iteration  14: 10.866 ns/op
+Iteration  15: 10.867 ns/op
+Iteration  16: 10.854 ns/op
+Iteration  17: 10.837 ns/op
+Iteration  18: 10.864 ns/op
+Iteration  19: 10.853 ns/op
+Iteration  20: 10.832 ns/op
+
+
+Result "org.example.FinalParamBenchmark.concatFinalParamStrings":
+  10.932 ±(99.9%) 0.080 ns/op [Average]
+  (min, avg, max) = (10.782, 10.932, 12.365), stdev = 0.338
+  CI (99.9%): [10.852, 11.012] (assumes normal distribution)
+
+
+# JMH version: 1.37
+# VM version: JDK 17.0.10, OpenJDK 64-Bit Server VM, 17.0.10+7
+# VM invoker: /home/luke/.sdkman/candidates/java/17.0.10-tem/bin/java
+# VM options: -javaagent:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/lib/idea_rt.jar=34427:/home/luke/opt/ideaIC-2023.3.4/idea-IC-233.14475.28/bin -Dfile.encoding=UTF-8
+# Blackhole mode: compiler (auto-detected, use -Djmh.blackhole.autoDetect=false to disable)
+# Warmup: 5 iterations, 10 s each
+# Measurement: 20 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Average time, time/op
+# Benchmark: org.example.FinalParamBenchmark.concatNonFinalParamStrings
+
+# Run progress: 66.67% complete, ETA 00:41:46
+# Fork: 1 of 10
+# Warmup Iteration   1: 12.349 ns/op
+# Warmup Iteration   2: 12.079 ns/op
+# Warmup Iteration   3: 11.294 ns/op
+# Warmup Iteration   4: 10.813 ns/op
+# Warmup Iteration   5: 10.850 ns/op
+Iteration   1: 10.820 ns/op
+Iteration   2: 10.936 ns/op
+Iteration   3: 10.824 ns/op
+Iteration   4: 10.845 ns/op
+Iteration   5: 10.779 ns/op
+Iteration   6: 10.804 ns/op
+Iteration   7: 10.854 ns/op
+Iteration   8: 10.849 ns/op
+Iteration   9: 10.880 ns/op
+Iteration  10: 10.803 ns/op
+Iteration  11: 10.841 ns/op
+Iteration  12: 10.808 ns/op
+Iteration  13: 10.810 ns/op
+Iteration  14: 10.833 ns/op
+Iteration  15: 10.816 ns/op
+Iteration  16: 10.833 ns/op
+Iteration  17: 10.850 ns/op
+Iteration  18: 10.833 ns/op
+Iteration  19: 10.842 ns/op
+Iteration  20: 10.863 ns/op
+
+# Run progress: 70.00% complete, ETA 00:37:35
+# Fork: 2 of 10
+# Warmup Iteration   1: 12.382 ns/op
+# Warmup Iteration   2: 12.411 ns/op
+# Warmup Iteration   3: 10.817 ns/op
+# Warmup Iteration   4: 10.798 ns/op
+# Warmup Iteration   5: 10.808 ns/op
+Iteration   1: 10.811 ns/op
+Iteration   2: 10.834 ns/op
+Iteration   3: 10.817 ns/op
+Iteration   4: 10.828 ns/op
+Iteration   5: 10.844 ns/op
+Iteration   6: 10.837 ns/op
+Iteration   7: 10.894 ns/op
+Iteration   8: 10.872 ns/op
+Iteration   9: 10.887 ns/op
+Iteration  10: 10.849 ns/op
+Iteration  11: 10.827 ns/op
+Iteration  12: 10.768 ns/op
+Iteration  13: 10.778 ns/op
+Iteration  14: 10.781 ns/op
+Iteration  15: 10.792 ns/op
+Iteration  16: 10.792 ns/op
+Iteration  17: 10.830 ns/op
+Iteration  18: 10.838 ns/op
+Iteration  19: 10.818 ns/op
+Iteration  20: 10.796 ns/op
+
+# Run progress: 73.33% complete, ETA 00:33:24
+# Fork: 3 of 10
+# Warmup Iteration   1: 12.308 ns/op
+# Warmup Iteration   2: 12.161 ns/op
+# Warmup Iteration   3: 10.837 ns/op
+# Warmup Iteration   4: 10.827 ns/op
+# Warmup Iteration   5: 10.813 ns/op
+Iteration   1: 10.852 ns/op
+Iteration   2: 10.849 ns/op
+Iteration   3: 10.840 ns/op
+Iteration   4: 10.828 ns/op
+Iteration   5: 10.841 ns/op
+Iteration   6: 10.885 ns/op
+Iteration   7: 10.853 ns/op
+Iteration   8: 10.851 ns/op
+Iteration   9: 10.880 ns/op
+Iteration  10: 10.885 ns/op
+Iteration  11: 10.830 ns/op
+Iteration  12: 10.848 ns/op
+Iteration  13: 10.859 ns/op
+Iteration  14: 10.848 ns/op
+Iteration  15: 10.876 ns/op
+Iteration  16: 10.805 ns/op
+Iteration  17: 10.791 ns/op
+Iteration  18: 10.804 ns/op
+Iteration  19: 10.816 ns/op
+Iteration  20: 10.848 ns/op
+
+# Run progress: 76.67% complete, ETA 00:29:14
+# Fork: 4 of 10
+# Warmup Iteration   1: 12.225 ns/op
+# Warmup Iteration   2: 12.093 ns/op
+# Warmup Iteration   3: 10.765 ns/op
+# Warmup Iteration   4: 10.769 ns/op
+# Warmup Iteration   5: 10.826 ns/op
+Iteration   1: 10.794 ns/op
+Iteration   2: 10.839 ns/op
+Iteration   3: 10.813 ns/op
+Iteration   4: 10.807 ns/op
+Iteration   5: 10.839 ns/op
+Iteration   6: 10.819 ns/op
+Iteration   7: 10.865 ns/op
+Iteration   8: 10.822 ns/op
+Iteration   9: 10.868 ns/op
+Iteration  10: 10.815 ns/op
+Iteration  11: 10.805 ns/op
+Iteration  12: 10.786 ns/op
+Iteration  13: 10.840 ns/op
+Iteration  14: 10.814 ns/op
+Iteration  15: 10.879 ns/op
+Iteration  16: 10.806 ns/op
+Iteration  17: 10.905 ns/op
+Iteration  18: 10.847 ns/op
+Iteration  19: 10.836 ns/op
+Iteration  20: 10.793 ns/op
+
+# Run progress: 80.00% complete, ETA 00:25:03
+# Fork: 5 of 10
+# Warmup Iteration   1: 12.286 ns/op
+# Warmup Iteration   2: 12.167 ns/op
+# Warmup Iteration   3: 10.885 ns/op
+# Warmup Iteration   4: 10.879 ns/op
+# Warmup Iteration   5: 10.828 ns/op
+Iteration   1: 10.806 ns/op
+Iteration   2: 10.835 ns/op
+Iteration   3: 10.816 ns/op
+Iteration   4: 10.784 ns/op
+Iteration   5: 10.837 ns/op
+Iteration   6: 10.844 ns/op
+Iteration   7: 10.820 ns/op
+Iteration   8: 10.841 ns/op
+Iteration   9: 10.817 ns/op
+Iteration  10: 10.809 ns/op
+Iteration  11: 10.860 ns/op
+Iteration  12: 10.852 ns/op
+Iteration  13: 10.840 ns/op
+Iteration  14: 10.836 ns/op
+Iteration  15: 10.826 ns/op
+Iteration  16: 10.826 ns/op
+Iteration  17: 10.855 ns/op
+Iteration  18: 10.843 ns/op
+Iteration  19: 10.836 ns/op
+Iteration  20: 10.824 ns/op
+
+# Run progress: 83.33% complete, ETA 00:20:53
+# Fork: 6 of 10
+# Warmup Iteration   1: 12.261 ns/op
+# Warmup Iteration   2: 12.183 ns/op
+# Warmup Iteration   3: 10.855 ns/op
+# Warmup Iteration   4: 10.882 ns/op
+# Warmup Iteration   5: 10.846 ns/op
+Iteration   1: 10.858 ns/op
+Iteration   2: 10.849 ns/op
+Iteration   3: 10.851 ns/op
+Iteration   4: 10.848 ns/op
+Iteration   5: 10.868 ns/op
+Iteration   6: 10.845 ns/op
+Iteration   7: 10.865 ns/op
+Iteration   8: 10.870 ns/op
+Iteration   9: 10.839 ns/op
+Iteration  10: 10.851 ns/op
+Iteration  11: 10.846 ns/op
+Iteration  12: 10.843 ns/op
+Iteration  13: 10.819 ns/op
+Iteration  14: 10.819 ns/op
+Iteration  15: 10.820 ns/op
+Iteration  16: 10.838 ns/op
+Iteration  17: 10.858 ns/op
+Iteration  18: 10.826 ns/op
+Iteration  19: 10.808 ns/op
+Iteration  20: 10.835 ns/op
+
+# Run progress: 86.67% complete, ETA 00:16:42
+# Fork: 7 of 10
+# Warmup Iteration   1: 12.492 ns/op
+# Warmup Iteration   2: 12.142 ns/op
+# Warmup Iteration   3: 10.891 ns/op
+# Warmup Iteration   4: 10.903 ns/op
+# Warmup Iteration   5: 10.839 ns/op
+Iteration   1: 10.884 ns/op
+Iteration   2: 10.922 ns/op
+Iteration   3: 10.850 ns/op
+Iteration   4: 10.872 ns/op
+Iteration   5: 10.858 ns/op
+Iteration   6: 10.863 ns/op
+Iteration   7: 10.848 ns/op
+Iteration   8: 10.835 ns/op
+Iteration   9: 10.849 ns/op
+Iteration  10: 10.866 ns/op
+Iteration  11: 10.850 ns/op
+Iteration  12: 10.838 ns/op
+Iteration  13: 10.856 ns/op
+Iteration  14: 10.821 ns/op
+Iteration  15: 10.878 ns/op
+Iteration  16: 10.843 ns/op
+Iteration  17: 10.813 ns/op
+Iteration  18: 10.838 ns/op
+Iteration  19: 10.852 ns/op
+Iteration  20: 10.811 ns/op
+
+# Run progress: 90.00% complete, ETA 00:12:31
+# Fork: 8 of 10
+# Warmup Iteration   1: 12.334 ns/op
+# Warmup Iteration   2: 12.174 ns/op
+# Warmup Iteration   3: 10.858 ns/op
+# Warmup Iteration   4: 10.823 ns/op
+# Warmup Iteration   5: 10.840 ns/op
+Iteration   1: 10.853 ns/op
+Iteration   2: 10.836 ns/op
+Iteration   3: 10.820 ns/op
+Iteration   4: 10.867 ns/op
+Iteration   5: 10.836 ns/op
+Iteration   6: 10.890 ns/op
+Iteration   7: 11.034 ns/op
+Iteration   8: 10.921 ns/op
+Iteration   9: 10.841 ns/op
+Iteration  10: 10.853 ns/op
+Iteration  11: 10.842 ns/op
+Iteration  12: 10.811 ns/op
+Iteration  13: 10.833 ns/op
+Iteration  14: 10.866 ns/op
+Iteration  15: 10.858 ns/op
+Iteration  16: 10.846 ns/op
+Iteration  17: 10.829 ns/op
+Iteration  18: 10.875 ns/op
+Iteration  19: 10.879 ns/op
+Iteration  20: 10.840 ns/op
+
+# Run progress: 93.33% complete, ETA 00:08:21
+# Fork: 9 of 10
+# Warmup Iteration   1: 12.279 ns/op
+# Warmup Iteration   2: 12.143 ns/op
+# Warmup Iteration   3: 10.814 ns/op
+# Warmup Iteration   4: 10.837 ns/op
+# Warmup Iteration   5: 10.896 ns/op
+Iteration   1: 10.822 ns/op
+Iteration   2: 10.830 ns/op
+Iteration   3: 10.823 ns/op
+Iteration   4: 10.832 ns/op
+Iteration   5: 10.829 ns/op
+Iteration   6: 10.841 ns/op
+Iteration   7: 10.835 ns/op
+Iteration   8: 10.821 ns/op
+Iteration   9: 10.843 ns/op
+Iteration  10: 10.812 ns/op
+Iteration  11: 10.876 ns/op
+Iteration  12: 10.862 ns/op
+Iteration  13: 10.833 ns/op
+Iteration  14: 10.836 ns/op
+Iteration  15: 10.801 ns/op
+Iteration  16: 10.854 ns/op
+Iteration  17: 10.799 ns/op
+Iteration  18: 10.837 ns/op
+Iteration  19: 10.821 ns/op
+Iteration  20: 10.781 ns/op
+
+# Run progress: 96.67% complete, ETA 00:04:10
+# Fork: 10 of 10
+# Warmup Iteration   1: 12.293 ns/op
+# Warmup Iteration   2: 12.141 ns/op
+# Warmup Iteration   3: 10.873 ns/op
+# Warmup Iteration   4: 10.847 ns/op
+# Warmup Iteration   5: 10.806 ns/op
+Iteration   1: 10.911 ns/op
+Iteration   2: 10.845 ns/op
+Iteration   3: 10.851 ns/op
+Iteration   4: 10.868 ns/op
+Iteration   5: 10.933 ns/op
+Iteration   6: 10.945 ns/op
+Iteration   7: 10.877 ns/op
+Iteration   8: 10.880 ns/op
+Iteration   9: 10.832 ns/op
+Iteration  10: 10.860 ns/op
+Iteration  11: 10.847 ns/op
+Iteration  12: 10.848 ns/op
+Iteration  13: 10.815 ns/op
+Iteration  14: 10.836 ns/op
+Iteration  15: 10.817 ns/op
+Iteration  16: 10.795 ns/op
+Iteration  17: 10.902 ns/op
+Iteration  18: 10.814 ns/op
+Iteration  19: 10.818 ns/op
+Iteration  20: 10.811 ns/op
+
+
+Result "org.example.FinalParamBenchmark.concatNonFinalParamStrings":
+  10.841 ±(99.9%) 0.008 ns/op [Average]
+  (min, avg, max) = (10.768, 10.841, 11.034), stdev = 0.033
+  CI (99.9%): [10.833, 10.848] (assumes normal distribution)
+
+
+# Run complete. Total time: 02:05:18
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+NOTE: Current JVM experimentally supports Compiler Blackholes, and they are in use. Please exercise
+extra caution when trusting the results, look into the generated code to check the benchmark still
+works, and factor in a small probability of new VM bugs. Additionally, while comparisons between
+different JVMs are already problematic, the performance difference caused by different Blackhole
+modes can be very significant. Please make sure you use the consistent Blackhole mode for comparisons.
+
+Benchmark                                                Mode  Cnt   Score   Error  Units
+BenchmarkRunner.concatFinalParamAndLocalVariableStrings  avgt  200  11.136 ± 0.244  ns/op
+BenchmarkRunner.concatFinalParamStrings                  avgt  200  10.932 ± 0.080  ns/op
+BenchmarkRunner.concatNonFinalParamStrings               avgt  200  10.841 ± 0.008  ns/op
+
+Process finished with exit code 0
